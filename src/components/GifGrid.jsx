@@ -4,7 +4,8 @@ const GifGrid = ({ category }) => {
 
    return(
     <>
-    <p>Hola mundo {category}</p>
+        <h3>{ category }</h3>
+        <p>Hola mundos</p>  
     </>
    )
 }

@@ -9,10 +9,12 @@ export const AddCategory = ( { onNewCategory } ) => {
     setInputValue(ev.target.value)
 
   }
+
   const onSubmitForm = ( ev )=>{
     ev.preventDefault();
     console.log("🚀 ~ onSubmitForm ~ inputValue:", inputValue)
     if(inputValue.trim().length <= 1)return 
+    console.log({inputValue});
     onNewCategory(inputValue.trim());
     //onAddCategories( cat => [ inputValue , ...cat  ] )
     setInputValue('')
@@ -24,6 +26,7 @@ export const AddCategory = ( { onNewCategory } ) => {
           value={inputValue}
           onChange={onInputChange }
         />
+        <button type="submit" >Agregar</button>
       </form>
     )
   }
