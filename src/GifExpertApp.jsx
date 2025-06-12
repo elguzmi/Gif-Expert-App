@@ -26,12 +26,8 @@ const GifExpertApp = () => {
       
 
       {/* Listado de Gif */}
-<<<<<<< HEAD
-      { categories.map( (category) => 
-=======
       {/* no hay que usar el indice porque react utiliza el valor de la llave cuando un elemento se elimino */}
       { categories.map( (category ) => 
->>>>>>> 363368d160488763c0dfdc914b5edc2c1320b24c
           (
             <GifGrid key={ category } category={ category } ></GifGrid>
           )
