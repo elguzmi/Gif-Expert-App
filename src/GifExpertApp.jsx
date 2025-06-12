@@ -4,7 +4,7 @@ import GifGrid from "./components/GifGrid";
 
 const GifExpertApp = () => {
 
-    const [ categories , setCategories ] =  useState(['Mario Bros' , 'dragon ball']); // [] simepre va a ser un arreglo
+    const [ categories , setCategories ] =  useState(['Mario Bros']); // [] simepre va a ser un arreglo
 
 
     const onAddCategory = ( newCategory )=>{
