@@ -1,11 +1,15 @@
+import PropTypes from 'prop-types'
+
 const GifGrid = ({ category }) => {
-  
-    return (
+
+   return(
     <>
-        <h3>{ category }</h3>
-        <p>Hola mundo</p>  
+    <p>Hola mundo {category}</p>
     </>
-  )
+   )
 }
 
+GifGrid.propTypes ={
+  category : PropTypes.string.isRequired
+}
 export default GifGrid
