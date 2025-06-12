@@ -5,16 +5,13 @@ export const AddCategory = ( { onNewCategory } ) => {
   
   const [ inputValue , setInputValue  ]  =  useState('')  
   const onInputChange = ( ev )=>{
-    console.log(ev.target.value)
     setInputValue(ev.target.value)
 
   }
 
   const onSubmitForm = ( ev )=>{
     ev.preventDefault();
-    console.log("🚀 ~ onSubmitForm ~ inputValue:", inputValue)
     if(inputValue.trim().length <= 1)return 
-    console.log({inputValue});
     onNewCategory(inputValue.trim());
     //onAddCategories( cat => [ inputValue , ...cat  ] )
     setInputValue('')
