@@ -1,5 +1,3 @@
-
-
 import PropTypes from 'prop-types'
 
 export const GifItem = ({title, url}) => {
@@ -11,6 +9,7 @@ export const GifItem = ({title, url}) => {
   )
 }
 
+// required es para que los parametros o props sean requeridos
 GifItem.propTypes = {
   title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired
